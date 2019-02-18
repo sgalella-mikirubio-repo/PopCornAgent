@@ -1,6 +1,6 @@
 # PopCornAgent
 
-PopCorn is a proof of concenpt of a Movie recommendation agent.
+PopCorn is a proof of concept of a Movie recommendation agent.
 
 It includes 30 movies and retrieves online information of them from IMDb
 

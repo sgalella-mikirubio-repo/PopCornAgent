@@ -1,0 +1,1194 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#"
+     xml:base="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#acts -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#acts">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#hasActor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#directs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#directs">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#hasDirector"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#hasActor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#hasActor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#hasDirector -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#hasDirector">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Country -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Country">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Duration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Duration">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Genre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Genre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Rate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Rate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#URLcode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#URLcode">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Year -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Year">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#inNetflix -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#inNetflix">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Person"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor"/>
+        <acts rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie001"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matthew McConaughey</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor"/>
+        <acts rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie002"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anthony Perkins</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor003">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor"/>
+        <acts rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie003"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sam Neill</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor004 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor004">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor"/>
+        <acts rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie004"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matthew Broderick</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor005 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor005">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor"/>
+        <acts rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie005"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ashton Kutcher</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor006 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor006">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor"/>
+        <acts rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie006"/>
+        <acts rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie017"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Will Smith</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor007 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor007">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor"/>
+        <acts rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie007"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clint Eastwood</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor008 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor008">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor"/>
+        <acts rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie008"/>
+        <acts rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie019"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harrison Ford</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor009 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor009">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor"/>
+        <acts rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie009"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gerard Butler</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor010 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor010">
+        <acts rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie010"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Russell Crowe</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor011 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor011">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor"/>
+        <acts rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie011"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marlon Brando</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor012 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor012">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor"/>
+        <acts rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie012"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liam Neeson</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor013 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor013">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor"/>
+        <acts rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie013"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Morgan Freeman</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor014 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor014">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor"/>
+        <acts rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie014"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maika Monroe</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor015 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor015">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor"/>
+        <acts rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie015"/>
+        <acts rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie028"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matt Damon</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor016 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor016">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor"/>
+        <acts rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie016"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paul Rudd</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor018 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor018">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor"/>
+        <acts rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie018"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ryan Gosling</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor020 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor020">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor"/>
+        <acts rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie020"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Santiago Segura</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor021 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor021">
+        <acts rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie021"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">François Cluzet</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor022 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor022">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor"/>
+        <acts rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie022"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">John Travolta</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor023 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor023">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor"/>
+        <acts rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie023"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sam Worthington</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor024 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor024">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor"/>
+        <acts rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie024"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sigourney Weaver</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor025 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor025">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor"/>
+        <acts rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie025"/>
+        <acts rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie029"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jim Carrey</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor026 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor026">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor"/>
+        <acts rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie026"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adrien Brody</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor027 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor027">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor"/>
+        <acts rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie027"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Natalie Portman</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor030 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor030">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Actor"/>
+        <acts rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie030"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amy Adams</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director"/>
+        <directs rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie001"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Christopher Nolan</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director"/>
+        <directs rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie002"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alfred Hitchcock</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director003">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director"/>
+        <directs rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie003"/>
+        <directs rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie008"/>
+        <directs rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie012"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Steven Spielberg</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director004 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director004">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director"/>
+        <directs rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie004"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rob Minkoff</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director005 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director005">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director"/>
+        <directs rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie005"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joshua Stern</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director006 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director006">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director"/>
+        <directs rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie006"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">David Ayer</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director007 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director007">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director"/>
+        <directs rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie007"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clint Eastwood</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director009 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director009">
+        <directs rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie009"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zack Snyder</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director010 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director010">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director"/>
+        <directs rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie010"/>
+        <directs rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie015"/>
+        <directs rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie019"/>
+        <directs rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie024"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ridley Scott</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director011 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director011">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director"/>
+        <directs rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie011"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Francis Ford Coppola</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director013 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director013">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director"/>
+        <directs rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie013"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">David Fincher</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director014 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director014">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director"/>
+        <directs rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie014"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Federico D&apos;Alessandro</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director016 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director016">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director"/>
+        <directs rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie016"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peyton Reed</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director017 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director017">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director"/>
+        <directs rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie017"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alex Proyas</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director018 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director018">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director"/>
+        <directs rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie018"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nick Cassavettes</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director020 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director020">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director"/>
+        <directs rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie020"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Santiago Segura</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director021 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director021">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director"/>
+        <directs rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie021"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olivier Nakache</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director022 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director022">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director"/>
+        <directs rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie022"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Randal Kleiser</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director023 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director023">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director"/>
+        <directs rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie023"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">James Cameron</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director025 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director025">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director"/>
+        <directs rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie025"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tom Shadyac</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director026 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director026">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director"/>
+        <directs rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie026"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Roman Polansky</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director027 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director027">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director"/>
+        <directs rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie027"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alex Garland</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director028 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director028">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director"/>
+        <directs rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie028"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Steven Soderbergh</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director029 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director029">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director"/>
+        <directs rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie029"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peter Weir</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director030 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director030">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Director"/>
+        <directs rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie030"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denis Villeneuve</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UK</Country>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">169</Duration>
+        <Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sci-fi</Genre>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interstellar</Name>
+        <Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.6</Rate>
+        <URLcode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0816692</URLcode>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</Year>
+        <inNetflix rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</inNetflix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</Country>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">109</Duration>
+        <Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">horror</Genre>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Psycho</Name>
+        <Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.5</Rate>
+        <URLcode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0054215</URLcode>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1960</Year>
+        <inNetflix rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</inNetflix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie003">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</Country>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">121</Duration>
+        <Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sci-fi</Genre>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jurassic Park</Name>
+        <Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.1</Rate>
+        <URLcode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0107290</URLcode>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1993</Year>
+        <inNetflix rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</inNetflix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie004 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie004">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</Country>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">85</Duration>
+        <Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">animation</Genre>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Lion King</Name>
+        <Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.5</Rate>
+        <URLcode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0110357</URLcode>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1994</Year>
+        <inNetflix rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</inNetflix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie005 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie005">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</Country>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">122</Duration>
+        <Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biographic</Genre>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jobs</Name>
+        <Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.9</Rate>
+        <URLcode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2357129</URLcode>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2013</Year>
+        <inNetflix rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</inNetflix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie006 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie006">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</Country>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">117</Duration>
+        <Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">action</Genre>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bright</Name>
+        <Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.4</Rate>
+        <URLcode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5519340</URLcode>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</Year>
+        <inNetflix rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</inNetflix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie007 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie007">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</Country>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">119</Duration>
+        <Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drama</Genre>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gran Torino</Name>
+        <Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.1</Rate>
+        <URLcode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1205489</URLcode>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2008</Year>
+        <inNetflix rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</inNetflix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie008 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie008">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</Country>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">115</Duration>
+        <Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adventures</Genre>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indiana Jones</Name>
+        <Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.5</Rate>
+        <URLcode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0082971</URLcode>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1981</Year>
+        <inNetflix rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</inNetflix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie009 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie009">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</Country>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">117</Duration>
+        <Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">action</Genre>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">300</Name>
+        <Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.7</Rate>
+        <URLcode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0416449</URLcode>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2006</Year>
+        <inNetflix rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</inNetflix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie010 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie010">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</Country>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">150</Duration>
+        <Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">action</Genre>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gladiator</Name>
+        <Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.5</Rate>
+        <URLcode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0172495</URLcode>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</Year>
+        <inNetflix rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</inNetflix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie011 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie011">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</Country>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">175</Duration>
+        <Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drama</Genre>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Godfather</Name>
+        <Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">9.2</Rate>
+        <URLcode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0068646</URLcode>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1972</Year>
+        <inNetflix rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</inNetflix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie012 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie012">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</Country>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">195</Duration>
+        <Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drama</Genre>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Schindler&apos;s List</Name>
+        <Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.9</Rate>
+        <URLcode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0108052</URLcode>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1993</Year>
+        <inNetflix rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</inNetflix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie013 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie013">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</Country>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">127</Duration>
+        <Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thriller</Genre>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Seven</Name>
+        <Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.6</Rate>
+        <URLcode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0114369</URLcode>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1995</Year>
+        <inNetflix rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</inNetflix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie014 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie014">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</Country>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">97</Duration>
+        <Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thriller</Genre>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tau</Name>
+        <Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.7</Rate>
+        <URLcode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4357394</URLcode>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2018</Year>
+        <inNetflix rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</inNetflix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie015 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie015">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</Country>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">142</Duration>
+        <Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sci-fi</Genre>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Martian</Name>
+        <Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.5</Rate>
+        <URLcode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3659388</URLcode>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2015</Year>
+        <inNetflix rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</inNetflix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie016 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie016">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</Country>
+        <Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sci-fi</Genre>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ant-Man</Name>
+        <Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.1</Rate>
+        <URLcode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5095030</URLcode>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">117</Year>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2015</Year>
+        <inNetflix rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</inNetflix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie017 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie017">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</Country>
+        <Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sci-fi</Country>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">115</Duration>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I, Robot</Name>
+        <Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.1</Rate>
+        <URLcode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0343818</URLcode>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2004</Year>
+        <inNetflix rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</inNetflix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie018 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie018">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</Country>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">124</Duration>
+        <Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">romance</Genre>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Notebook</Name>
+        <Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.9</Rate>
+        <URLcode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0332280</URLcode>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2004</Year>
+        <inNetflix rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</inNetflix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie019 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie019">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</Country>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">117</Duration>
+        <Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sci-fi</Genre>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blade Runner</Name>
+        <Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.2</Rate>
+        <URLcode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0083658</URLcode>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1982</Year>
+        <inNetflix rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</inNetflix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie020 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie020">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spain</Country>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">97</Duration>
+        <Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">comedy</Genre>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Torrente</Name>
+        <Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.9</Rate>
+        <URLcode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0120868</URLcode>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1998</Year>
+        <inNetflix rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</inNetflix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie021 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie021">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">France</Country>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">109</Duration>
+        <Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">comedy</Genre>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Untouchable</Name>
+        <Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.5</Rate>
+        <URLcode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1675434</URLcode>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2011</Year>
+        <inNetflix rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</inNetflix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie022 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie022">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</Country>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">110</Duration>
+        <Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">musical</Genre>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grease</Name>
+        <Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.2</Rate>
+        <URLcode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0077631</URLcode>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1978</Year>
+        <inNetflix rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</inNetflix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie023 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie023">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</Country>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">161</Duration>
+        <Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sci-fi</Genre>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Avatar</Name>
+        <Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.8</Rate>
+        <URLcode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0499549</URLcode>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2009</Year>
+        <inNetflix rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</inNetflix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie024 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie024">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</Country>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">116</Duration>
+        <Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">horror</Genre>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alien</Name>
+        <Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.5</Rate>
+        <URLcode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0078748</URLcode>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1979</Year>
+        <inNetflix rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</inNetflix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie025 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie025">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</Country>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">101</Duration>
+        <Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">comedy</Genre>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bruce Almighty</Name>
+        <Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.7</Rate>
+        <URLcode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0315327</URLcode>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2003</Year>
+        <inNetflix rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</inNetflix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie026 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie026">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UK</Country>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">148</Duration>
+        <Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drama</Genre>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Pianist</Name>
+        <Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.5</Rate>
+        <URLcode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0253474</URLcode>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2002</Year>
+        <inNetflix rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</inNetflix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie027 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie027">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UK</Country>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">115</Duration>
+        <Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sci-fi</Genre>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Annihilation</Name>
+        <Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.9</Rate>
+        <URLcode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2798920</URLcode>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2018</Year>
+        <inNetflix rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</inNetflix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie028 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie028">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</Country>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">106</Duration>
+        <Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thriller</Genre>
+        <Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.6</Rate>
+        <URLcode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1598778</URLcode>
+        <URLcode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contagion</URLcode>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2011</Year>
+        <inNetflix rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</inNetflix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie029 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie029">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</Country>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">103</Duration>
+        <Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drama</Genre>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Truman Show</Name>
+        <Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.1</Rate>
+        <URLcode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0120382</URLcode>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1998</Year>
+        <inNetflix rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</inNetflix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie030 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie030">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#Movie"/>
+        <Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</Country>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">116</Duration>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2016</Duration>
+        <Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sci-fi</Genre>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arrival</Name>
+        <Rate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.9</Rate>
+        <URLcode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2543164</URLcode>
+        <inNetflix rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</inNetflix>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi -->
+

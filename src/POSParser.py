@@ -1,3 +1,10 @@
+"""
+Project: PopCornAgent
+Name: POSParser.py
+Authors: mikirubio & sgalella
+Description: parser to detect important frames for recommendation
+"""
+
 import nltk
 
 def parserSystem(audio_to_parse, film_frame):

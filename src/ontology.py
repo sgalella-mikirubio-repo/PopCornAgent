@@ -1,4 +1,10 @@
-#Ontology
+"""
+Project: PopCornAgent
+Name: ontology.py
+Authors: mikirubio & sgalella
+Description: manage and consult the ontology (.owl)
+"""
+
 import rdflib
 import rdflib.plugins.sparql as sparql
 from random import randint
@@ -7,9 +13,7 @@ from random import randint
 def undefinedManaging(film_frame):
     
     g = rdflib.Graph()
-    g.parse("/Users/Miguel/Gitlab/popcorn/PopCornOntology.owl")
-    #g.parse("/Users/Miguel/Desktop/PopCornAgent/PopCornOntology.owl")
-    #g.parse("/Users/sgalella/Documents/UniversitatPompeuFabra/GoogleDrive/IntelligentSystems/PrimerTrimestre/NaturalLanguageInteraction/PopcornAgent/PopCornOntology.owl")
+    g.parse("../data/PopCornOntology.owl")
     semweb1=rdflib.URIRef('http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#')
     
     row = []
@@ -91,9 +95,7 @@ def undefinedManaging(film_frame):
 def ontologyConsulting(film_frame):
 
     g = rdflib.Graph()
-    g.parse("/Users/Miguel/Gitlab/popcorn/PopCornOntology.owl")
-    #g.parse("/Users/Miguel/Desktop/PopCornAgent/PopCornOntology.owl")
-    #g.parse("/Users/sgalella/Documents/UniversitatPompeuFabra/GoogleDrive/IntelligentSystems/PrimerTrimestre/NaturalLanguageInteraction/PopcornAgent/PopCornOntology.owl")
+    g.parse("../data/PopCornOntology.owl")
     semweb1=rdflib.URIRef('http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#')
 
     
@@ -165,9 +167,7 @@ def ontologyConsulting(film_frame):
 def randomMovie():
     
     g = rdflib.Graph()
-    g.parse("/Users/Miguel/Gitlab/popcorn/PopCornOntology.owl")
-    #g.parse("/Users/Miguel/Desktop/PopCornAgent/PopCornOntology.owl")
-    #g.parse("/Users/sgalella/Documents/UniversitatPompeuFabra/GoogleDrive/IntelligentSystems/PrimerTrimestre/NaturalLanguageInteraction/PopcornAgent/PopCornOntology.owl")
+    g.parse("../data/PopCornOntology.owl")
     
     str_general = """
         PREFIX mov: <http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#>

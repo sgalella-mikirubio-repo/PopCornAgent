@@ -1,9 +1,13 @@
-# Speech Recognition
+"""
+Project: PopCornAgent
+Name: speechRecognition.py
+Authors: mikirubio & sgalella
+Description: recognize speech from input
+"""
+
 import speech_recognition as sr
-#print(sr.__version__)
 
 # Create a recognizer instance
-
 def speechRecognizer():
     r = sr.Recognizer()
     mic = sr.Microphone()

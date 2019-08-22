@@ -1,3 +1,10 @@
+"""
+Project: PopCornAgent
+Name: IMDbCrawler.py
+Authors: mikirubio & sgalella
+Description: crawl IMDb to retrieve information about the recommended film
+"""
+
 from urllib.request import urlopen
 from urllib.request import urlretrieve
 from bs4 import BeautifulSoup
@@ -10,9 +17,7 @@ import os
 def retrieveData(movie_name):
     
     g = rdflib.Graph()
-    g.parse("/Users/Miguel/Gitlab/popcorn/PopCornOntology.owl")
-    #g.parse("/Users/Miguel/Desktop/PopCornAgent/PopCornOntology.owl")
-    #g.parse("/Users/sgalella/Documents/UniversitatPompeuFabra/GoogleDrive/IntelligentSystems/PrimerTrimestre/NaturalLanguageInteraction/PopcornAgent/PopCornOntology.owl")
+    g.parse("../data/PopCornOntology.owl")
     
     q = g.query("""
         PREFIX mov: <http://www.semanticweb.org/sgalella/ontologies/2018/11/movieAgent#>

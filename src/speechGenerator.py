@@ -1,3 +1,10 @@
+"""
+Project: PopCornAgent
+Name: speechGenerator.py
+Authors: mikirubio & sgalella
+Description: generate different answers according to the dialogue manager
+"""
+
 from ontology import *
 from speechRecognition import speechRecognizer
 from speechSynthesis import speechSynthesizer
@@ -50,7 +57,7 @@ def responseGenerator(film_frame, to_ask):
             print("\nListening...",end = "\r")
             audio_recorded = speechRecognizer()
             tokens = nltk.word_tokenize(audio_recorded)
-            print('\rUser: '+audio_recorded+ '    ')
+            print('\rUser: '+audio_recorded[0].upper() + audio_recorded[1:]+ '.    ')
             if 'no' in tokens:
                 string = "Perfect! I hope you enjoy it. I leave you some information. See you next time!"
                 print("\nPopCorn: "+string)
@@ -61,9 +68,6 @@ def responseGenerator(film_frame, to_ask):
                 string = 'I\'m sorry, I don\'t have any other film. If you want to see a different movie, you know where to find me. See you!'
                 print("\nPopCorn: "+string)
                 speechSynthesizer(string)
-                #film_frame.year = []; film_frame.genre = []; film_frame.actor = []; 
-                #film_frame.duration = []; film_frame.rate = []; film_frame.undefined1 = [];
-                #film_frame.country = []; film_frame.director = []; film_frame.undefined2 = [];
                 end = True
         elif len(movie_list) == 2:
             string = 'I have a couple of recommendations. Have you seen '+movie_list[0]+'?'
@@ -72,7 +76,7 @@ def responseGenerator(film_frame, to_ask):
             print("\nListening...",end = "\r")
             audio_recorded = speechRecognizer()
             tokens = nltk.word_tokenize(audio_recorded)
-            print('\rUser: '+audio_recorded+ '    ')
+            print('\rUser: '+audio_recorded[0].upper() + audio_recorded[1:]+ '.    ')
             if 'no' in tokens:
                 string = "Perfect! I hope you enjoy it. I leave you some information. See you next time!"
                 print("\nPopCorn: "+string)
@@ -86,9 +90,9 @@ def responseGenerator(film_frame, to_ask):
                 print("\nListening...",end = "\r")
                 audio_recorded = speechRecognizer()
                 tokens = nltk.word_tokenize(audio_recorded)
-                print('\rUser: '+audio_recorded+ '    ')
+                print('\rUser: '+audio_recorded[0].upper() + audio_recorded[1:]+ '.    ')
                 if 'yes' in tokens:
-                    string = "I'm sorry, I don't have any more movies to recomend with your requirements. See you next time!"
+                    string = "I'm sorry, I don't have any more movies to recommend with your requirements. See you next time!"
                     print("\nPopCorn: "+string)
                     speechSynthesizer(string)
                     end = True

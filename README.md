@@ -1,8 +1,85 @@
 # PopCornAgent
-_Created by Santiago Galella (sgalella) and Miguel Casal (mikirubio)_
 
-PopCorn is a proof of concept of a Movie recommendation agent.
+###### _Authors: sgalella, mikirubio_
 
-It includes 30 movies and retrieves online information of them from IMDb
+#### Description
 
-If you download it, remember to change the paths in the g.parse functions inside the ontology.py and IMDbCrawler.py file
+Movie recommendation agent written in Python 3.6. Ask and finds the best film to recommend from an ontology including 30 different movies.
+
+The search parameters are the following:
+1. year
+2. duration
+3. country
+4. genre
+5. rate in IMDb
+6. director
+7. actor or actress
+
+#### Images
+
+Dialogue:
+<p>
+  <img width="592" height="209" src="images/dialogue.jpg">
+</p>
+
+Information collected from IMDb:
+<p align="center">
+  <img width="880" height="509" src="images/crawler.jpg">
+</p>
+
+
+#### List of Dependencies
+
+
+###### beautifulsoup
+```
+foo@bar:~$  pip install beautifulsoup4
+
+```
+
+
+###### matplotlib
+```
+foo@bar:~$  pip install matplotlib
+
+```
+
+###### nltk
+```
+foo@bar:~$  pip install --user -U nltk
+
+```
+
+###### Pillow
+```
+foo@bar:~$  pip install pillow 
+
+```
+
+###### PyAudio
+```
+foo@bar:~$  pip install PyAudio
+
+```
+
+###### pyttsx3
+```
+foo@bar:~$  pip install pyttsx3
+
+```
+
+###### rdflib
+```
+foo@bar:~$  pip install rdflib
+
+```
+
+
+###### speechRecogniton
+```
+foo@bar:~$  pip install SpeechRecognition
+
+```
+
+
+

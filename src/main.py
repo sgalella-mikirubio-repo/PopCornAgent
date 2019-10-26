@@ -1,52 +1,72 @@
-"""
-Project: PopCornAgent
-Name: main.py
-Authors: mikirubio & sgalella
-Description: main of the program
-"""
-
-from speechRecognition import speechRecognizer
-from POSParser import parserSystem
-from ontology import *
-from speechGenerator import responseGenerator
-from speechSynthesis import speechSynthesizer
-from IMDbCrawler import retrieveData
-import nltk
+from speechRecognition import speech_recognizer
+from POSParser import parser_system
+from ontology import undefined_managing
+from speechGenerator import response_generator
+from speechSynthesis import speech_synthesizer
+# from IMDbCrawler import retrieveData
 
 
-class struct:
-    def __init__(self,**kwds):
-        self.__dict__.update(kwds)
-    def length(self):
-        for attr, value in self.__dict__.items():
-            print(attr, value)
-        
-film_frame = struct(year = [], duration = [], country = [], genre = [], rate = [], director = [],
-                    actor = [], undefined1 = [],undefined2 = [])
+class PopCorn:
+    """Create agent struct with different fields to be filled.
+    """
+    def __init__(self, voice=True, keyboard=False):
+        self.year = []
+        self.duration = []
+        self.country = []
+        self.genre = []
+        self.rate = []
+        self.director = []
+        self.actor = []
+        self.undefined1 = []
+        self.undefined2 = []
+        self.voice = voice
+        self.keyboard = keyboard
 
-string = "Hi, I'm PopCorn. What kind of film do you want to watch?"
-print("\nPopCorn: "+string)
-speechSynthesizer(string)
+    def __repr__(self):
+        return ("Year: {}\nDuration: {}\nCountry: {}\nGenre: {}\nRate: {}\n"
+                "Director: {}\nActor: {}\nUndefined1: {}\n"
+                "Undefined2: {}\n".format(self.year, self.duration,
+                                          self.country, self.genre, self.rate,
+                                          self.director, self.actor,
+                                          self.undefined1, self.undefined2))
 
-to_ask = ['year', 'duration','country','genre','rate','director','actor']
+    def say(self, message):
+        print("PopCorn: {}\n".format(message))
+        if self.speech:
+            speech_synthesizer(message)
+
+    def listen(self):
+        if self.keyboard:
+            user_message = input()
+            print(">User: {}\n".format(user_message))
+        else:
+            print("Listening...", end="\r")
+            user_message = speech_recognizer()
+            print(">User: {}".format(audio_recorded[0].upper()
+                                     + audio_recorded[1:]))
 
 
 if __name__ == "__main__":
-
+    film_frame = PopCorn()
+    film_frame.say("Hi, I'm PopCorn. What kind of film do you want to watch?")
+    to_ask = ['year', 'duration', 'country', 'genre',
+              'rate', 'director', 'actor']
     while True:
         try:
-            print("\nListening...",end = "\r")
-            audio_recorded = speechRecognizer()
-        except:
-            string = "I'm sorry. I couldn't hear anything. If you need something call me back."
+            print("\nListening...", end="\r")
+            audio_recorded = speech_recognizer()
+        except ValueError:
+            string = ("I'm sorry. I couldn't hear anything."
+                      "If you need something call me back.")
             print("\nPopCorn: "+string)
-            speechSynthesizer(string)
+            speech_synthesizer(string)
             break
-        print('\rUser: '+audio_recorded[0].upper() + audio_recorded[1:]+ '.    ')
-        film_frame = parserSystem(audio_recorded, film_frame)
-        film_frame = undefinedManaging(film_frame)
-        movie_list, end, film_frame, to_ask = responseGenerator(film_frame, to_ask)
+        print('\rUser: ' + audio_recorded[0].upper() + audio_recorded[1:]
+              + '.    ')
+        film_frame = parser_system(audio_recorded, film_frame)
+        print(film_frame)
+        film_frame = undefined_managing(film_frame)
+        movie_list, end, film_frame, to_ask = response_generator(film_frame,
+                                                                 to_ask)
         if end:
             break
-
-

@@ -28,58 +28,14 @@ Information collected from IMDb:
 </p>
 
 
-#### List of Dependencies
+#### Installation
 
-
-###### beautifulsoup
+To install all the different dependencies of the project run. Make sure you are
+working in a controllable environment (virtual environment, for example):
+````
+foo@bar:~$  pip install -r /path/to/requirements.txt
 ```
-foo@bar:~$  pip install beautifulsoup4
-
+To run the agent, type:
+````
+foo@bar:~$  python run.py
 ```
-
-
-###### matplotlib
-```
-foo@bar:~$  pip install matplotlib
-
-```
-
-###### nltk
-```
-foo@bar:~$  pip install --user -U nltk
-
-```
-
-###### Pillow
-```
-foo@bar:~$  pip install pillow 
-
-```
-
-###### PyAudio
-```
-foo@bar:~$  pip install PyAudio
-
-```
-
-###### pyttsx3
-```
-foo@bar:~$  pip install pyttsx3
-
-```
-
-###### rdflib
-```
-foo@bar:~$  pip install rdflib
-
-```
-
-
-###### speechRecogniton
-```
-foo@bar:~$  pip install SpeechRecognition
-
-```
-
-
-

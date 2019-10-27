@@ -36,6 +36,6 @@ working in a controllable environment (virtual environment, for example):
 foo@bar:~$  pip install -r /path/to/requirements.txt
 ```
 To run the agent, type:
-````
+```
 foo@bar:~$  python run.py
 ```

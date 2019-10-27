@@ -32,10 +32,13 @@ Information collected from IMDb:
 
 To install all the different dependencies of the project run. Make sure you are
 working in a controllable environment (virtual environment, for example):
-````
+
+```
 foo@bar:~$  pip install -r /path/to/requirements.txt
 ```
+
 To run the agent, type:
+
 ```
 foo@bar:~$  python run.py
 ```

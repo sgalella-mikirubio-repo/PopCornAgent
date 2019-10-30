@@ -1,6 +1,6 @@
 # PopCornAgent
 
-###### _Authors: sgalella, mikirubio_
+###### _Authors:  mikirubio & sgalella_
 
 #### Description
 

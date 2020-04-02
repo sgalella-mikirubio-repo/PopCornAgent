@@ -40,7 +40,7 @@ class PopCornAgent:
         self.name2 = []
         self.movie_list = []
         self.to_ask = ['genre', 'actor', 'director']
-        self.ontology = "../PopCornAgent/data/PopCornOntology.owl"
+        self.ontology = "data/PopCornOntology.owl"
         self.voice = voice
         self.voice_type = voice_type
         self.keyboard = keyboard
@@ -384,7 +384,7 @@ class PopCornAgent:
             movie (str): Movie selected by the agent to recommend.
         """
         g = rdflib.Graph()
-        g.parse("../PopCornAgent/data/PopCornOntology.owl")
+        g.parse("data/PopCornOntology.owl")
         # Get the movie URL
         query_url = g.query("""
             PREFIX mov:

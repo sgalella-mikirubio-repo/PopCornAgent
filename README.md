@@ -2,8 +2,6 @@
 
 ###### _Authors:  macasal & sgalella_
 
-#### Description
-
 Movie recommendation agent written in Python 3.6. Ask and finds the best film to recommend from an ontology including 30 different movies.
 
 The search parameters are the following:
@@ -15,7 +13,22 @@ The search parameters are the following:
 6. director
 7. actor or actress
 
-#### Images
+
+## Installation
+
+To install all the different dependencies of the project run:
+
+```
+pip install -r requirements.txt
+```
+
+Then, to run the agent, type:
+
+```
+python run.py
+```
+
+## Images
 
 Dialogue:
 <p>
@@ -26,19 +39,3 @@ Information collected from IMDb:
 <p align="center">
   <img width="880" height="509" src="images/crawler.jpg">
 </p>
-
-
-#### Installation
-
-To install all the different dependencies of the project run. Make sure you are
-working in a controllable environment (virtual environment, for example):
-
-```
-foo@bar:~$  pip install -r /path/to/requirements.txt
-```
-
-To run the agent, type:
-
-```
-foo@bar:~$  python run.py
-```

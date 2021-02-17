@@ -1,0 +1,14 @@
+name: popcorn-agent
+dependencies:
+  - python=3.6
+  - jupyterlab
+  - pip
+  - pip:
+    - beautifulsoup4==4.8.0
+    - matplotlib==3.1.1
+    - nltk==3.4.5
+    - Pillow>=6.2.2
+    - PyAudio==0.2.11
+    - pyttsx3==2.71
+    - rdflib==4.2.2
+    - SpeechRecognition==3.8.1
